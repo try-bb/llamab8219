@@ -1,5 +1,8 @@
 # 🦙 LlamaGUI — llama.cpp 图形化运行器
 
+> 💡 **把你的想法变成现实，来这里试试 try** —— 碰撞产生火花，来吧我的朋友。觉得有用的话，点个 ⭐ Star 支持一下！
+>
+
 **让跑 GGUF 模型像双击桌面图标一样简单。**
 
 一个用 Python + PyQt5 写的图形化工具，把 llama.cpp 的 `llama-server` 和 Open WebUI 装进一个窗口里：选模型、调参数、点启动，全程不用碰命令行。
