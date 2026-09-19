@@ -39,7 +39,7 @@
 ### 1. 准备
 
 - Windows 10/11 + Python 3.12（`pip install PyQt5 requests`）
-- [llama.cpp](https://github.com/ggml-org/llama.cpp) 的 `llama-server.exe`（放到 `llama-bin/` 目录）
+- **llama.cpp 最新版**（去 [Releases 页面](https://github.com/ggml-org/llama.cpp/releases) 下载最新的 Windows 预编译包，解压后把 `llama-server.exe` 放到 `llama-bin/` 目录；版本号看 [Tags 页面](https://github.com/ggml-org/llama.cpp/tags)，b 号越大越新）
 - 你的 `.gguf` 模型文件（放到 `C:\Users\<用户名>\.lmstudio\models\`，或改 bat 里的路径）
 
 ### 2. 启动
