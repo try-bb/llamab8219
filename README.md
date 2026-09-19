@@ -40,12 +40,13 @@
 
 - Windows 10/11 + Python 3.12（`pip install PyQt5 requests`）
 - **llama.cpp 预编译版**（不用自己编译）：
-  1. 打开 [llama.cpp Releases 页面](https://github.com/ggml-org/llama.cpp/releases)，找**最新一条** release（b 号越大越新）
-  2. 在下面的附件列表里，**按你的显卡选对应的 Windows 包**：
-     - **NVIDIA 显卡** → 选 `llama-...-win-cuda-12.x.zip`（数字选你 CUDA 驱动支持的版本，不确定就选 12.4，兼容性最好）
-     - **AMD / Intel 显卡** → 选 `llama-...-win-vulkan.zip`
-     - **纯 CPU 跑** → 选 `llama-...-win-avx2.zip`（CPU 支持 AVX512 的选 avx512 版）
-  3. 下载后**解压到本项目的 `llama-bin/` 目录**（解压完 `llama-bin/llama-server.exe` 能直接看到就行，多一层文件夹就再往里挪一下）
+  1. 打开 [llama.cpp Releases 页面](https://github.com/ggml-org/llama.cpp/releases)，找**最新一条** release（b 号越大越新，比如 b9503）
+  2. 在附件列表里，**按你的硬件选对应的 Windows 包**（`bXXXX` 是版本号，跟着 release 走）：
+     - **NVIDIA 显卡** → `llama-bXXXX-bin-win-cuda-12.4-x64.zip`（有 CUDA 13 驱动可选 13.3 版）
+     - **AMD 显卡** → `llama-bXXXX-bin-win-hip-radeon-x64.zip`
+     - **Intel 显卡 / 通用** → `llama-bXXXX-bin-win-vulkan-x64.zip`
+     - **纯 CPU 跑** → `llama-bXXXX-bin-win-cpu-x64.zip`
+  3. 下载后**解压到本项目的 `llama-bin/` 目录**（解压完 `llama-bin/llama-server.exe` 能直接看到就行；如果多套了一层文件夹，把里面的文件挪到 `llama-bin/` 下）
 - 你的 `.gguf` 模型文件（放到 `C:\Users\<用户名>\.lmstudio\models\`，或改 bat 里的路径）
 
 ### 2. 启动
