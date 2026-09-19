@@ -47,7 +47,7 @@
      - **Intel 显卡 / 通用** → `llama-bXXXX-bin-win-vulkan-x64.zip`
      - **纯 CPU 跑** → `llama-bXXXX-bin-win-cpu-x64.zip`
   3. 下载后**解压到本项目的 `llama-bin/` 目录**（解压完 `llama-bin/llama-server.exe` 能直接看到就行；如果多套了一层文件夹，把里面的文件挪到 `llama-bin/` 下）
-- 你的 `.gguf` 模型文件（放到 `C:\Users\<用户名>\.lmstudio\models\`，或改 bat 里的路径）
+- 你的 `.gguf` 模型文件（放哪都行，**模型目录在界面里可以自定义设置**，见下文）
 
 ### 2. 启动
 
@@ -58,7 +58,10 @@
 
 ### 3. 使用
 
-界面里选模型 → 调参数（或加载预设）→ 点 **▶ 启动** → 完事。
+1. 打开界面后，先在**模型选择**里设置**模型目录**（点浏览按钮选你放 `.gguf` 的文件夹，支持历史记录快速切换），点刷新扫描
+2. 选模型 → 调参数（或加载预设）→ 点 **▶ 启动** → 完事
+
+> 注：`start_llama_with_choice.bat` 里写死了 `C:\Users\<用户名>\.lmstudio\models`，如果你的模型放别处，直接用界面启动就行（界面里的目录设置优先），或改一下 bat 里的 `models_dir`。
 
 API 地址：`http://127.0.0.1:8081`（OpenAI 兼容格式，可直接接各种客户端）
 
